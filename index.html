@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Analisis Deskripsi Audiens</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container box-outer">
+    <h1>Analisis Deskripsi Audiens</h1>
+    <p class="desc">
+      Tuliskan deskripsi bebas tentang audiens atau diri Anda. Sistem akan
+      menganalisis isi narasi dan menampilkan komposisi karakteristik dalam
+      bentuk visual dan penjelasan naratif.
+    </p>
+
+    <textarea 
+      id="deskripsi"
+      placeholder="Contoh: Saya adalah orang yang ceria, penyayang, suka menolong, dan mudah mempercayai orang lain..."
+    ></textarea>
+
+    <div class="actions">
+      <button class="neumorphic" id="analisisBtn">Analisis</button>
+      <button class="neumorphic" id="resetBtn">Ulang</button>
+      <button class="neumorphic" id="bagikanBtn">Bagikan</button>
+    </div>
+
+    <section id="hasil" class="result">
+      <!-- Trait: Happiness -->
+      <div class="trait" id="trait-happiness">
+        <div class="trait-title">
+          <span>➤ Happiness</span>
+          <span class="persen">0%</span>
+        </div>
+        <div class="bar"><div class="fill" style="width: 0%"></div></div>
+        <p class="trait-desc">Deskripsi belum ada</p>
+      </div>
+
+      <!-- Trait: Kindness -->
+      <div class="trait" id="trait-kindness">
+        <div class="trait-title">
+          <span>➤ Kindness</span>
+          <span class="persen">0%</span>
+        </div>
+        <div class="bar"><div class="fill" style="width: 0%"></div></div>
+        <p class="trait-desc">Deskripsi belum ada</p>
+      </div>
+
+      <!-- Trait: Optimism -->
+      <div class="trait" id="trait-optimism">
+        <div class="trait-title">
+          <span>➤ Optimism</span>
+          <span class="persen">0%</span>
+        </div>
+        <div class="bar"><div class="fill" style="width: 0%"></div></div>
+        <p class="trait-desc">Deskripsi belum ada</p>
+      </div>
+
+      <!-- Trait: Trust -->
+      <div class="trait" id="trait-trust">
+        <div class="trait-title">
+          <span>➤ Trust</span>
+          <span class="persen">0%</span>
+        </div>
+        <div class="bar"><div class="fill" style="width: 0%"></div></div>
+        <p class="trait-desc">Deskripsi belum ada</p>
+      </div>
+
+      <!-- Trait: Respect -->
+      <div class="trait" id="trait-respect">
+        <div class="trait-title">
+          <span>➤ Respect</span>
+          <span class="persen">0%</span>
+        </div>
+        <div class="bar"><div class="fill" style="width: 0%"></div></div>
+        <p class="trait-desc">Deskripsi belum ada</p>
+      </div>
+
+      <!-- Trait: Ego -->
+      <div class="trait" id="trait-ego">
+        <div class="trait-title">
+          <span>➤ Ego</span>
+          <span class="persen">0%</span>
+        </div>
+        <div class="bar"><div class="fill" style="width: 0%"></div></div>
+        <p class="trait-desc">Deskripsi belum ada</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

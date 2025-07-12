@@ -1,0 +1,177 @@
+:root {
+  --bar-bg: #bfa6ff;
+  --bar-fill: #ffa6fe;
+  --font-color: #ffa6fe;
+  --font-main: 'Georgia', sans-serif;
+  --radius: 14px;
+  --border: -4px -4px 8px rgba(255,255,255, 0.01);
+  --theme-color: linear-gradient(125deg, #6c5ce7, #ff69b4);  
+  --shadow-inset: inset 4px 4px 8px rgba(0,0,0,0.5), 
+                      inset -4px -4px 8px rgba(255,255,255,0.3);
+  --shadow-out: 4px 4px 8px rgba(0,0,0,0.4),
+                    -4px -4px 8px rgba(255,255,255,0.2);
+}
+
+/* ===== Box Button ===== */
+
+.neumorphic {
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--theme-color);
+  box-shadow: var(--shadow-out);
+  transition: all color 0.3s ease;
+}
+
+.neumorphic:hover {
+  box-shadow: var(--shadow-out);
+}
+
+.neumorphic:active {
+  box-shadow: var(--shadow-inset);
+}
+
+/* ===== Box Layouts ===== */
+
+.box-outer {
+  padding: 20px; 
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--theme-color);
+  box-shadow: var(--shadow-out);
+  transition: all color 0.3s ease;
+}
+
+.box-inset {
+  padding: 20px; 
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--theme-color);
+  box-shadow: var(--shadow-out);
+  transition: all color 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -webkit-user-select: none; 
+  -webkit-tap-highlight-color: transparent; 
+}
+
+html {
+  position: relative;
+  overflow-x: hidden;  
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--theme-color);
+  color: var(--font-color); 
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 100%;
+  padding: 1.5rem; 
+  font-family: var(--font-main);
+  background: var(--theme-color);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-out);
+}
+  
+h1 {
+  font-size: 25px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.desc {
+  text-align: center;
+  font-size: 11px;
+  margin-bottom: 30px;
+}
+
+textarea {
+  width: 95%;
+  height: 170px;
+  padding: 10px;
+  margin: 0 auto 1rem;
+  font-size: 11px;
+  resize: vertical;
+  color: var(--font-color);
+  font-family: var(--font-main);
+  background: var(--theme-color);
+  border: none;
+  outline: none;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-inset);
+}
+
+textarea {
+  border: 0 !important;
+  outline: none !important;
+}
+
+textarea::placeholder {
+  color: var(--font-color);
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+button {
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--theme-color);
+  color: var(--font-color); 
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.result {
+  background: var(--theme-color);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-inset);
+}
+
+.trait {
+  margin-bottom: 1.5rem;
+}
+
+.trait-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.bar {
+  height: 12px;
+  background: var(--bar-bg);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: var(--bar-fill);
+  transition: width 0.6s ease;
+}
+
+.trait-desc {
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+  color: var(--font-color); 
+}
