@@ -2,7 +2,7 @@
 :root {
   --bar-bg: #bfa6ff;
   --bar-fill: #ffa6fe;
-  --font-color: #ffa6fe;
+  --font-color: #f2f2f2;
   --font-main: 'Georgia', sans-serif;
   --radius: 14px;
   --border: -4px -4px 8px rgba(255,255,255, 0.01);
@@ -73,6 +73,19 @@ body {
   color: var(--font-color); 
   padding: 1rem;
   margin: 0 auto;
+}
+
+body::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  z-index: 9999;
+  background-image: url("https://www.transparenttextures.com/patterns/classy-fabric.png");
+  background-repeat: repeat;
+  background-size: auto;
+  opacity: 0.7;  
+  mix-blend-mode: overlay;
+  pointer-events: none;
 }
 
 .container {
@@ -226,4 +239,15 @@ button {
 
 #psikologi strong {
   color: var(--font-color);
+}
+
+.note-refleksi {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-inset);
+  font-size: 11px;
+  color: var(--font-color);
+  line-height: 1.6;
+  margin-top: 2rem;
 }
