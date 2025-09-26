@@ -509,6 +509,3 @@ document.querySelectorAll('.button').forEach(el => {
 document.addEventListener("contextmenu", e => e.preventDefault());
 document.addEventListener("selectstart", e => e.preventDefault());
 document.addEventListener("copy", e => e.preventDefault());
-
-document.querySelector('.typed-text').setAttribute('translate', 'no');
-document.querySelector('footer').setAttribute('translate', 'no');
