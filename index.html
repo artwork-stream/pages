@@ -164,7 +164,7 @@
       <div class="home-name">
         <h1 class="glitch">Artwork Stream</h1>
       </div>
-      <div class="typed-text">
+      <div class="typed-text" translate="no">
         <span id="typed"></span>
       </div>
       <!-- Social Media -->
@@ -448,9 +448,11 @@
     </footer>
   </div>
 
-<!-- ===== Scripts ===== -->
-<script src="library/script.js"></script>
+<!-- Library Typed.js -->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<!-- Script utama -->
+<script src="library/script.js"></script>
 
 <!-- Schema.org JSON-LD -->
 <script type="application/ld+json">
@@ -468,6 +470,8 @@
     ]
   }
 </script>
+
+<!-- Navigator Geolocation -->
 <script>
 if (navigator.geolocation) {
 navigator.geolocation.getCurrentPosition(async function(position) {
