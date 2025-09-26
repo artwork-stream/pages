@@ -1067,10 +1067,12 @@ footer a {
   color: var(--color);
   text-align: center;
   padding: 25px;
-  width: 320px; 
+  width: 80%;
+  max-width: 280px;
+  min-width: 240px;
   display: flex;
   flex-direction: column;
-  gap: 10px; 
+  gap: 15px;
 }
 
 .login-box input {
